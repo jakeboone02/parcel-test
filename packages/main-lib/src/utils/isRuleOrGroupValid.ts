@@ -1,4 +1,4 @@
-import type { RuleGroupTypeAny, RuleType, RuleValidator, ValidationResult } from '../types';
+import { RuleGroupTypeAny, RuleType, RuleValidator, ValidationResult } from '../types';
 
 /**
  * Determines if this is a valid ValidationResult

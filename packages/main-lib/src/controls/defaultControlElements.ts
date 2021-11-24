@@ -1,7 +1,7 @@
 import { ActionElement, DragHandle, NotToggle, ValueEditor, ValueSelector } from ".";
 import { Rule } from "../Rule";
 import { RuleGroup } from "../RuleGroup";
-import type { Controls } from "../types";
+import { Controls } from "../types";
 
 export const defaultControlElements: Controls = {
   addGroupAction: ActionElement,

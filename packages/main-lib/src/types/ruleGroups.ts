@@ -1,5 +1,5 @@
-import type { NameLabelPair } from '.';
-import type { MappedTuple } from './util';
+import { NameLabelPair } from '.';
+import { MappedTuple } from './util';
 
 export interface RuleType {
   path?: number[];

@@ -1,5 +1,5 @@
 import { generateID } from '.';
-import type {
+import {
   RuleGroupArray,
   RuleGroupICArray,
   RuleGroupType,

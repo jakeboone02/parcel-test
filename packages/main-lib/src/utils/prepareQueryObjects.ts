@@ -1,6 +1,6 @@
 import produce from 'immer';
 import { generateID } from '.';
-import type { RuleGroupArray, RuleGroupICArray, RuleGroupTypeAny, RuleType } from '../types';
+import { RuleGroupArray, RuleGroupICArray, RuleGroupTypeAny, RuleType } from '../types';
 
 /**
  * Generates a valid rule

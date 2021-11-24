@@ -1,12 +1,12 @@
-import type { Field, NameLabelPair, ValueEditorType } from './basic';
-import type {
+import { Field, NameLabelPair, ValueEditorType } from './basic';
+import {
   RuleGroupType,
   RuleGroupTypeAny,
   RuleGroupTypeIC,
   RuleOrGroupArray,
   RuleType
 } from './ruleGroups';
-import type { QueryValidator, ValidationMap, ValidationResult } from './validation';
+import { QueryValidator, ValidationMap, ValidationResult } from './validation';
 
 export interface CommonProps {
   /**

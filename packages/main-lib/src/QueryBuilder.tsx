@@ -11,7 +11,7 @@ import {
   defaultTranslations,
   standardClassnames
 } from './defaults';
-import type {
+import {
   Field,
   QueryBuilderProps,
   QueryBuilderPropsInternal,

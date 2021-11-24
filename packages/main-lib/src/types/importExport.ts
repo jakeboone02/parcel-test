@@ -1,4 +1,4 @@
-import type { QueryValidator, RuleValidator } from './validation';
+import { QueryValidator, RuleValidator } from './validation';
 
 export type ExportFormat =
   | 'json'

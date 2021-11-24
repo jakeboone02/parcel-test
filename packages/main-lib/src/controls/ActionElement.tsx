@@ -1,4 +1,4 @@
-import type { ActionProps } from '../types';
+import { ActionProps } from '../types';
 
 const ActionElement = ({ className, handleOnClick, label, title }: ActionProps) => (
   <button className={className} title={title} onClick={(e) => handleOnClick(e)}>

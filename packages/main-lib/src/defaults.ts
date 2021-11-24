@@ -1,4 +1,4 @@
-import type {
+import {
   Classnames, DefaultCombinator,
   DefaultOperator,
   Field,

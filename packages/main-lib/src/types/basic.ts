@@ -1,4 +1,4 @@
-import type { RuleValidator } from './validation';
+import { RuleValidator } from './validation';
 
 export type ValueEditorType = 'text' | 'select' | 'checkbox' | 'radio' | null;
 
