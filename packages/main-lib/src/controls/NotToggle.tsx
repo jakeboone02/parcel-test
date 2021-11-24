@@ -1,12 +1,5 @@
 import { NotToggleProps } from '../types';
 
-const NotToggle = ({ className, handleOnChange, title, label, checked }: NotToggleProps) => (
-  <label className={className} title={title}>
-    <input type="checkbox" onChange={(e) => handleOnChange(e.target.checked)} checked={!!checked} />
-    {label}
-  </label>
+export const NotToggle = ({ className }: NotToggleProps) => (
+  <div className={className}>Test</div>
 );
-
-NotToggle.displayName = 'NotToggle';
-
-export default NotToggle;

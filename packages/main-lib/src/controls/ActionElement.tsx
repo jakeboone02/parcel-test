@@ -1,11 +1,5 @@
 import { ActionProps } from '../types';
 
-const ActionElement = ({ className, handleOnClick, label, title }: ActionProps) => (
-  <button className={className} title={title} onClick={(e) => handleOnClick(e)}>
-    {label}
-  </button>
+export const ActionElement = ({ className }: ActionProps) => (
+  <div className={className}>Test</div>
 );
-
-ActionElement.displayName = 'ActionElement';
-
-export default ActionElement;

@@ -1,12 +1,12 @@
-import { Field, NameLabelPair, ValueEditorType } from './basic';
-import {
+import type { Field, NameLabelPair, ValueEditorType } from './basic';
+import type {
   RuleGroupType,
   RuleGroupTypeAny,
   RuleGroupTypeIC,
   RuleOrGroupArray,
   RuleType
 } from './ruleGroups';
-import { QueryValidator, ValidationMap, ValidationResult } from './validation';
+import type { QueryValidator, ValidationMap, ValidationResult } from './validation';
 
 export interface CommonProps {
   /**
@@ -72,12 +72,13 @@ export interface OperatorSelectorProps extends ValueSelectorProps {
   fieldData: Field;
 }
 
-export interface ValueEditorProps extends SelectorEditorProps {
+export interface ValueEditorProps extends CommonProps {
+  handleOnChange(value: any): void;
   field: string;
-  fieldData: Field;
+  fieldData: any;
   operator: string;
-  type?: ValueEditorType;
-  inputType?: string | null;
+  // type?: string;
+  inputType?: any;
   values?: any[];
   value?: any;
 }
@@ -92,9 +93,7 @@ export interface Controls {
   cloneGroupAction: React.ComponentType<ActionWithRulesProps>;
   cloneRuleAction: React.ComponentType<ActionProps>;
   combinatorSelector: React.ComponentType<CombinatorSelectorProps>;
-  dragHandle: React.ForwardRefExoticComponent<
-    DragHandleProps & React.RefAttributes<HTMLSpanElement>
-  >;
+  dragHandle: any;
   fieldSelector: React.ComponentType<FieldSelectorProps>;
   notToggle: React.ComponentType<NotToggleProps>;
   operatorSelector: React.ComponentType<OperatorSelectorProps>;
