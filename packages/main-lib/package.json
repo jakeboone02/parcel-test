@@ -22,6 +22,6 @@
     "react-dnd-html5-backend": "^14.0.2"
   },
   "scripts": {
-    "build": "parcel build"
+    "build": "rimraf dist && parcel build"
   }
 }
